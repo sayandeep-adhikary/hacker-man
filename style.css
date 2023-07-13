@@ -1,0 +1,68 @@
+@font-face {
+    src: url("hack.ttf");
+    font-family: hack;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    color: green;
+}
+body {
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    font-family: hack;
+    /* word-spacing: 50px; */
+    overflow: hidden;
+}
+h1 {
+    letter-spacing: 20px;
+    font-size: 5rem;
+    text-align: center;
+}
+.input {
+    background-color: transparent;
+    border: 1.5px solid green;
+    border-radius: 5px;
+    width: 300px;
+}
+.input:focus {
+    border: 1.5px solid red;
+    outline: none;
+}
+.numbers {
+    text-align: left;
+    max-width: 400px;
+    overflow-wrap: break-word;
+    opacity: 0.9;
+}
+#hack-program {
+    max-height: 200px;
+    overflow-y: scroll;
+    font-size: 20px;
+    text-shadow: 0 0 1px #FF0000, 0 0 2px #0000FF;
+    /* border: 1px solid red;
+    border-radius: 7px; */
+}
+#hack-program::-webkit-scrollbar {
+    display: none;
+}
+@media (width < 400px){
+    h1 {
+        font-size: 3rem;
+    }
+}
+@media (width < 850px){
+    body {
+        background-image: url("images/bg-small.jpg");
+        background-size: cover;
+    }
+    .main {
+        flex-direction: column;
+    }
+    #hello1{
+        display: none;
+    }
+}
